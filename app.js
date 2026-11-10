@@ -9,6 +9,7 @@ const { notFoundHandler, errorHandler } = require("./middlewares/errorHandler");
 // const mahasiswaRoutes = require("./routes/mahasiswaRoutes");
 // const fakultasRoutes = require("./routes/fakultasRoutes");
 const petaniRoutes = require("./routes/petaniRoutes");
+const bijiKopiRoutes = require("./routes/bijiKopiRoutes");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -32,6 +33,7 @@ app.get("/", (req, res) => {
 // app.use("/mahasiswa", mahasiswaRoutes);
 // app.use("/fakultas", fakultasRoutes);
 app.use("/petani", petaniRoutes);
+app.use("/biji-kopi", bijiKopiRoutes);
 
 // ---------- Handler 404 dan error handler (paling bawah) ----------
 app.use(notFoundHandler);

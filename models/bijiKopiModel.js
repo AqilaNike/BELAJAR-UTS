@@ -15,4 +15,4 @@ const bijiKopiSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now },
 });
 
-module.exports = mongoose.model('Biji Kopi', bijiKopiSchema);
+module.exports = mongoose.model('BijiKopi', bijiKopiSchema);
